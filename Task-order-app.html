@@ -437,11 +437,7 @@
           "Allowances for Additional Preliminary Design Services: " +
           f(n2) +
           "<br>" +
-          "Sub-total of Preliminary Design Fee: (" +
-          f(n1) +
-          " + " +
-          f(n2) +
-          " ) = " +
+          "Sub-total of Preliminary Design Fee: " +
           f(calc2(n1, n2)) +
           "<br><br>" +
           "Reimbursable for Preliminary design phase: " +
@@ -453,15 +449,7 @@
           "CSS for Preliminary design phase: " +
           f(n5) +
           "<br>" +
-          "Preliminary design phase not-to-exceed amount: (" +
-          f(calc2(n1, n2)) +
-          " + " +
-          f(n3) +
-          " + " +
-          f(n4) +
-          " + " +
-          f(n5) +
-          " ) = " +
+          "Preliminary design phase not-to-exceed amount: " +
           f(calc4(calc2(n1, n2), n3, n4, n5)) +
           "<br><br>" +
           "<i><u>Final Design Phase</i></u> <br>" +
@@ -471,11 +459,7 @@
           "Allowances for Additional Final Design Services:" +
           f(n7) +
           "<br>" +
-          "Sub-total of Final Design Fee: (" +
-          f(n6) +
-          " + " +
-          f(n7) +
-          " ) = " +
+          "Sub-total of Final Design Fee: " +
           f(calc2(n6, n7)) +
           "<br><br>" +
           "Reimbursable for the Final design phase: " +
@@ -487,18 +471,14 @@
           "CSS for Final design phase: " +
           f(n10) +
           "<br>" +
-          "Final design phase not-to-exceed amount: (" +
-          f(calc2(n6, n7)) +
-          " + " +
-          f(n8) +
-          " + " +
-          f(n9) +
-          " + " +
-          f(n10) +
-          " ) = " +
+          "Final design phase not-to-exceed amount: " +
           f(calc4(calc2(n6, n7), n8, n9, n10)) +
           "<br>" +
           "Total Preliminary and Final design phase NTE amount: (" +
+          f(calc4(calc2(n1, n2), n3, n4, n5)) +
+          " + " +
+          f(calc4(calc2(n6, n7), n8, n9, n10)) +
+          ") = " +
           f(
             calc2(
               calc4(calc2(n1, n2), n3, n4, n5),
@@ -509,82 +489,160 @@
           // /******************************************************************/
           "<h3><b><u>Modified Estimate:</u></b></h3>" +
           "<i><u>Preliminary Design Phase</i></u> <br>" +
-          "Preliminary Design Fee: " +
+          "Preliminary Design Fee: (" +
+          f(n1) +
+          " + " +
           f(n11) +
+          ") = " +
+          f(calc2(n1, n11)) +
           "<br>" +
-          "Allowances for Additional Preliminary Design Services: " +
+          "Allowances for Additional Preliminary Design Services: (" +
+          f(n2) +
+          " + " +
           f(n12) +
+          ") = " +
+          f(calc2(n2, n12)) +
           "<br>" +
           "Sub-total of Preliminary Design Fee: (" +
-          f(n11) +
+          f(calc2(n1, n11)) +
           " + " +
-          f(n12) +
+          f(calc2(n2, n12)) +
           " ) = " +
-          f(calc2(n11, n12)) +
+          f(calc2(calc2(n1, n11), calc2(n2, n12))) +
           "<br><br>" +
-          "Reimbursable for Preliminary design phase: " +
+          "Reimbursable for Preliminary design phase: (" +
+          f(n3) +
+          " + " +
           f(n13) +
+          ") = " +
+          f(calc2(n3, n13)) +
           "<br>" +
           "Artwork for Preliminary design phase:" +
+          f(n4) +
+          " + " +
           f(n14) +
+          ") = " +
+          f(calc2(n4, n14)) +
           "<br>" +
           "CSS for Preliminary design phase:" +
+          f(n5) +
+          " + " +
           f(n15) +
+          ") = " +
+          f(calc2(n5, n15)) +
           "<br>" +
           "Preliminary design phase not-to-exceed amount: (" +
-          f(calc2(n11, n12)) +
+          f(calc2(calc2(n1, n11), calc2(n2, n12))) +
           " + " +
-          f(n13) +
+          f(calc2(n3, n13)) +
           " + " +
-          f(n14) +
+          f(calc2(n4, n14)) +
           " + " +
-          f(n15) +
+          f(calc2(n5, n15)) +
           " ) = " +
-          f(calc4(calc2(n11, n12), n13, n14, n15)) +
+          f(
+            calc4(
+              calc2(calc2(n1, n11), calc2(n2, n12)),
+              calc2(n3, n13),
+              calc2(n4, n14),
+              calc2(n5, n15)
+            )
+          ) +
           "<br><br>" +
           "<i><u>Final Design Phase</i></u> <br>" +
           "Final Design Fee: " +
+          f(n6) +
+          " + " +
           f(n16) +
+          ") = " +
+          f(calc2(n6, n16)) +
           "<br>" +
-          "Allowances for Additional Final Design Services: " +
-          f(n17) +
-          "<br>" +
-          "Sub-total of Final Design Fee: (" +
-          f(n16) +
+          "Allowances for Additional Preliminary Design Services: (" +
+          f(n7) +
           " + " +
           f(n17) +
+          ") = " +
+          f(calc2(n7, n17)) +
+          "<br>" +
+          "Sub-total of Preliminary Design Fee: (" +
+          f(calc2(n6, n16)) +
+          " + " +
+          f(calc2(n7, n17)) +
           " ) = " +
-          f(calc2(n16, n17)) +
+          f(calc2(calc2(n6, n16), calc2(n7, n17))) +
           "<br><br>" +
-          "Reimbursable for the Final design phase: " +
-          f(n18) +
-          "<br>" +
-          "Artwork for Final design phase:" +
-          f(n19) +
-          "<br>" +
-          "CSS for Final design phase:" +
-          f(n20) +
-          "<br>" +
-          "Final design phase not-to-exceed amount: (" +
-          f(calc2(n16, n17)) +
+          "Reimbursable for Preliminary design phase: (" +
+          f(n8) +
           " + " +
           f(n18) +
+          ") = " +
+          f(calc2(n8, n18)) +
+          "<br>" +
+          "Artwork for Preliminary design phase:" +
+          f(n9) +
           " + " +
           f(n19) +
+          ") = " +
+          f(calc2(n9, n19)) +
+          "<br>" +
+          "CSS for Preliminary design phase:" +
+          f(n10) +
           " + " +
           f(n20) +
+          ") = " +
+          f(calc2(n10, n20)) +
+          "<br>" +
+          "Preliminary design phase not-to-exceed amount: (" +
+          f(calc2(calc2(n6, n16), calc2(n7, n17))) +
+          " + " +
+          f(calc2(n8, n18)) +
+          " + " +
+          f(calc2(n9, n19)) +
+          " + " +
+          f(calc2(n10, n20)) +
           " ) = " +
-          f(calc4(calc2(n16, n17), n18, n19, n20)) +
+          f(
+            calc4(
+              calc2(calc2(n6, n16), calc2(n7, n17)),
+              calc2(n8, n18),
+              calc2(n9, n19),
+              calc2(n10, n20)
+            )
+          ) +
           "<br><br>" +
           "Total Preliminary and Final design phase NTE amount: (" +
-          f(calc4(calc2(n11, n12), n13, n14, n15)) +
+          f(
+            calc4(
+              calc2(calc2(n1, n11), calc2(n2, n12)),
+              calc2(n3, n13),
+              calc2(n4, n14),
+              calc2(n5, n15)
+            )
+          ) +
           " + " +
-          f(calc4(calc2(n16, n17), n18, n19, n20)) +
+          f(
+            calc4(
+              calc2(calc2(n6, n16), calc2(n7, n17)),
+              calc2(n8, n18),
+              calc2(n9, n19),
+              calc2(n10, n20)
+            )
+          ) +
           " ) = " +
           f(
             calc2(
-              calc4(calc2(n11, n12), n13, n14, n15),
-              calc4(calc2(n16, n17), n18, n19, n20)
+              calc4(
+                calc2(calc2(n1, n11), calc2(n2, n12)),
+                calc2(n3, n13),
+                calc2(n4, n14),
+                calc2(n5, n15)
+              ),
+              calc4(
+                calc2(calc2(n6, n16), calc2(n7, n17)),
+                calc2(n8, n18),
+                calc2(n9, n19),
+                calc2(n10, n20)
+              )
             )
           );
       };
