@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app/Styles_TO_STO.css">
+    <title>Supplemental Task Order</title>
+</head>
+<body>
+    <nav>
+      <a href="index.html" style="margin-right: 300px"
+        >HOME: Task Order Review Application</a
+      >
+      <a href="TO.html" style="margin-right: 100px">Initial Task Order</a>
+      <a href="STO.html">Supplemental Task Order</a>
+    </nav>
+
+      <div class="grid-container">
+
+
+        <div class="row1">
+<div class="col1"> 
+    <div class="flex-container">
+        <div id="app">
+          <!-- <h2 class="heading2"><b>STO Review Application</b></h2> -->
+  
+          <div class="TO_ID">
+            <h3 class="heading3">Previous Fee Schedule:</h3>
+            <input type="text" class="text-field" id="pEstimate" value="01A" />
+          </div>
+  
+          <h4 class="previous">Preliminary Design Phase</h4>
+  
+          <form id="myForm">
+<div class="align">
+              <label for="pfee">Preliminary Design Fee:</label>
+   
+            <input
+              type="text"
+              id="preli-fee1"
+
+              name="preli-fee1"
+              value="0"
+              data-type="currency"
+              placeholder="Enter amount"
+              pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+            />
+</div>
+  
+<!-- <div class="align">
+              <label for="pAllowance1"
+              >Allowance for additional Preliminary Design services fee:</label
+            >
+  
+            <input
+              type="text"
+              id="pAllowance1"
+
+              name="pAllowance1"
+              value="0"
+            />
+</div> -->
+  
+            <!-- /*******************************************************/ -->
+            <div class="align">
+              <label for="pre-reimburse1"
+              >Reimbursables for Preliminary design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="preli-reimburse1"
+
+              name="preli-reimburse1"
+              value="0"
+            />
+            </div>
+  
+           <div class="align">
+             <label for="pArtwork1">Artwork for Preliminary design phase:</label>
+  
+            <input
+              type="text"
+              id="pArtwork1"
+
+              name="pArtwork1"
+              value="0"
+            />
+           </div>
+  
+<!-- <div class="align">
+              <label for="pCSS1"
+              >Construction support services for Preliminary design phase:</label
+            >
+            <input
+              type="text"
+              id="pCSS1"
+
+              name="pCSS1"
+              value="0"
+            />
+</div> -->
+  
+            <!-- /***************** Previous Fee Schedule: Final Design Phase ***************/ -->
+  
+            <h4 class="previous">Final Design Phase</h4>
+<div class="align">
+              <label for="ffee1">Final Design Fee:</label>
+  
+            <input
+              type="text"
+              id="final-fee1"
+
+              name="final-fee1"
+              value="0"
+            />
+</div>
+  
+<div class="align">
+              <label for="fAllowance1"
+              >Allowance for additional Final Design services fee:</label
+            >
+  
+            <input
+              type="text"
+              id="fAllowance1"
+
+              name="fAllowance1"
+              value="0"
+            />
+</div>
+  
+            <!-- /*******************************************************/ -->
+<div class="align">
+              <label for="final-reimburse1"
+              >Reimbursables for Final design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="final-reimburse1"
+
+              name="final-reimburse1"
+              value="0"
+            />
+</div>
+  
+<!-- <div class="align">
+              <label for="fArtwork1">Artwork for Final design phase:</label>
+  
+            <input
+              type="text"
+              id="fArtwork1"
+
+              name="fArtwork1"
+              value="0"
+            />
+</div> -->
+  
+<div class="align">
+              <label for="fCSS1"
+              >Construction support services for Final design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="fCSS1"
+
+              name="fCSS1"
+              value="0"
+            />
+</div>
+  
+            <!-- /***************** Modified Fee Schedule: ***************/ -->
+                         <div class="TO_ID">
+              <h3 class="heading3">Modified Fee Schedule:</h3>
+
+                            <input
+                type="text"
+                class="text-field"
+                id="mEstimate"
+                value="01AS01"
+              />
+            </div>
+  
+            <h4 class="modified">Preliminary Design Phase</h4>
+
+
+  <div class="align">
+            <label for="pfee2">Preliminary Design Fee:</label>
+  
+            <input
+              type="text"
+              id="preli-fee2"
+
+              name="preli-fee2"
+              value="0"
+            />
+  </div>
+  <!-- <div class="align">
+            <label for="pAllowance2"
+              >Allowance for additional Preliminary Design services fee:</label
+            >
+  
+            <input
+              type="text"
+              id="pAllowance2"
+
+              name="pAllowance2"
+              value="0"
+            />
+  </div> -->
+  <div class="align">
+            <label for="pre-reimburse2"
+              >Reimbursables for Preliminary design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="preli-reimburse2"
+
+              name="preli-reimburse2"
+              value="0"
+            />
+  </div>
+              <!-- /*******************************************************/ -->
+  <div class="align">
+            <label for="pArtwork2">Artwork for Preliminary design phase:</label>
+  
+            <input
+              type="text"
+              id="pArtwork2"
+
+              name="pArtwork2"
+              value="0"
+            />
+  </div>
+  <!-- <div class="align">
+            <label for="pCSS2"
+              >Construction support services for Preliminary design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="pCSS2"
+
+              name="pCSS2"
+              value="0"
+            />
+  </div> -->
+
+  
+            <!-- /***************** Modified Fee Schedule: Final Design Phase ***************/ -->
+  
+            <h4 class="modified">Final Design Phase</h4>
+  <div class="align">
+            <label for="ffee2">Final Design Fee:</label>
+  
+            <input
+              type="text"
+              id="final-fee2"
+
+              name="final-fee2"
+              value="0"
+            />
+  </div>
+  <div class="align">
+            <label for="fAllowance2"
+              >Allowance for additional Final Design services fee:</label
+            >
+  
+            <input
+              type="text"
+              id="fAllowance2"
+
+              name="fAllowance2"
+              value="0"
+            />
+  </div>
+              <!-- /*******************************************************/ -->
+  <div class="align">
+            <label for="final-reimburse2"
+              >Reimbursables for Final design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="final-reimburse2"
+
+              name="final-reimburse2"
+              value="0"
+            />
+  </div>
+  <!-- <div class="align">
+            <label for="fArtwork2">Artwork for Final design phase:</label>
+  
+            <input
+              type="text"
+              id="fArtwork2"
+
+              name="fArtwork2"
+              value="0"
+            />
+  </div> -->
+  <div class="align">
+            <label for="fCSS2"
+              >Construction support services for Final design phase:</label
+            >
+            <input
+              type="text"
+              id="fCSS2"
+              name="fCSS2"
+              value="0"
+            />
+  </div> 
+
+    <br><h3 class="heading3" id="TE">Time Extension related info:</h3>
+
+     <div class="align">
+            <label for="NTP_date"
+              >Notice to Proceed (NTP date)<span>*</span>:</label
+            >
+            <input
+              type="date"
+              id="NTP_date"
+              name="NTP_date"
+            />
+  </div> 
+
+    <div class="align">
+            <label for="current_end_date"
+              >Previous End date (including all extensions)<span>*</span>:</label
+            >
+            <input
+              type="date"
+              id="current_end_date"
+              name="current_end_date"
+            />
+  </div> 
+
+ <!-- <div class="align">
+<label for="time_extension">Time extension requested?</label>
+<select id="time_extension" name="time_extension">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+</div> -->
+
+  <div class="align">
+            <label for="time_extension"
+              >Time extension requested for (CCDs)<span>*</span>:</label
+            >
+            <input
+              type="number"
+              id="time_extension"
+              name="time_extension"
+            />
+  </div> 
+
+
+
+
+            <!-- /***************** Time extension wip: ***************/ -->
+  
+            <button type="button" id="btn">Submit</button>
+          </form>
+          <br />
+        </div>
+      </div>
+</div>
+<div class="col2" id="displayArea1"> <b><u>FEE SCHEDULE:</u></b></div>
+</div> <!-- End of row1-->
+
+<!-- /***************************** Collapsible Form ************************/ -->
+
+
+
+
+        <div class="row2"><!-- Start of row2-->
+            <h3>Task Order requested amount information</h3>
+            <details>
+              <summary>View the Amount Details Form</summary>
+            <form>
+              <div class="pay_info b1">
+                <h2>B.1 Task Order Requested Amount</h2>
+        
+               <div>
+                <div class="flex-container_b1">
+                  <div class="mini-flex">
+                    <label for="Funding_type">Funding Type:</label>
+                    <select id="Funding_type" name="Funding_type">
+                      <option value="Capital" selected="true">Capital</option>
+                      <option value="Expense">Expense</option>
+                      <option value="Split Fund">Split Fund</option>
+                    </select>
+                  </div>
+        
+                  <div class="mini-flex">
+                    <label for="Total_Amount"
+                      >Total TO/STO Amount ($)<span>*</span>:</label
+                    >
+                    <input type="text" id="Total_Amount" class="accounting" value="0" />
+                  </div>
+               
+                </div>
+
+                <p id="note">Estimated Total Not to Exceed Amount of this Task Order
+                </p>
+               </div>
+
+              </div>
+
+        
+              <div class="pay_info b2">
+                <h2>B.2 Preliminary Design Phase not-to-exceed Total Amount</h2>
+        
+                <div class="grid_b2">
+                  <div>
+                    <label for="Preli_NTE" class="long-label"
+                      >Preliminary Design Phase not-to-exceed Amount ($):</label
+                    >
+                    <input type="text" id="Preli_NTE" class="accounting" value="0" />
+                  </div>
+        
+                  <div>
+                    <label for="P_Payment_Method">Payment Method:<span>*</span></label>
+                    <!-- <input type="text" id="P_Payment_Method" value="Fee" /> -->
+                    <select id="P_Payment_Method">
+                      <option value="Fee" selected="true">Fee</option>
+                      <option value="Staffing">Staffing (Time card)</option>
+                      <option value="Fee_and_staffing">Fee and Staffing</option>
+                      <option value="Multiplier">Multiplier</option>
+                    </select>
+                  </div>
+        
+                  <div>
+                    <label for="Preli_Fee">Preliminary Fee Amount ($):</label>
+                    <input type="text" id="Preli_Fee" class="accounting" value="0" />
+                  </div>
+        
+                  <div>
+                    <label for="Preli_staffing"
+                      >Preliminary Allowance for staffing ($):</label
+                    >
+                    <input
+                      type="text"
+                      id="Preli_staffing"
+                      class="accounting"
+                      value="0"
+                    />
+                  </div>
+        
+                  <div>
+                    <label for="Preli_art"
+                      >Preliminary Allowance for Artwork ($):</label
+                    >
+                    <input type="text" id="Preli_art" class="accounting" value="0" />
+                  </div>
+                  <div class="long-label">
+                    <label for="Preli_Reimburse"
+                      >Preliminary Allowance for Reimbursable services ($):</label
+                    >
+                    <input
+                      type="text"
+                      id="Preli_Reimburse"
+                      class="accounting"
+                      value="0"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Final Design Phase: -->
+              <div class="pay_info">
+                <h2>B.3 Final Design Phase not-to-exceed Total Amount</h2>
+        
+                <div class="grid_b2">
+                  <div>
+                    <label for="Final_NTE" class="long-label"
+                      >Final Design Phase not-to-exceed Amount ($):</label
+                    >
+                    <input type="text" id="Final_NTE" class="accounting" value="0" />
+                  </div>
+        
+                  <div>
+                    <label for="F_Payment_Method">Payment Method:<span>*</span></label>
+                    <!-- <input type="text" id="F_Payment_Method" value="Fee" /> -->
+                    <select id="F_Payment_Method">
+                        <option value="Fee" selected="true">Fee</option>
+                        <option value="Staffing">Staffing (Time card)</option>
+                        <option value="Fee_and_staffing">Fee and Staffing</option>
+                        <option value="Multiplier">Multiplier</option>
+                      </select>
+                  </div>
+        
+                  <div>
+                    <label for="Final_Fee">Final Fee Amount ($):</label>
+                    <input type="text" id="Final_Fee" class="accounting" value="0" />
+                  </div>
+        
+                  <div>
+                    <label for="Final_staffing"
+                      >Final Allowance for staffing ($):</label
+                    >
+                    <input
+                      type="text"
+                      id="Final_staffing"
+                      class="accounting"
+                      value="0"
+                    />
+                  </div>
+        
+                  <!-- <div>
+                    <label for="Final_art">Final Allowance for Artwork ($):</label>
+                    <input type="text" id="Final_art" class="accounting" value="0" />
+                  </div> -->
+        
+                  <div>
+                    <label for="Final_Reimburse"
+                      >Final Allowance for Reimbursable services ($):</label
+                    >
+                    <input
+                      type="text"
+                      id="Final_Reimburse"
+                      class="accounting"
+                      value="0"
+                    />
+                  </div>
+                </div>
+              </div>
+        
+              <div class="pay_info">
+                <h2>B.4 Supplemental Task Order Amount</h2>
+        
+                <div class="grid_b2">
+                  <div>
+                    <label for="Cumulative"
+                      >Cumulative value (Org. TO + all STO(including this STO))
+                      ($):</label
+                    >
+                    <input type="text" id="Cumulative" class="accounting" value="0" />
+                  </div>
+                  <div>
+                    <label for="CumPreliPh"
+                      >Cumulative value of Preliminary Design Phase ($):</label
+                    >
+                    <input type="text" id="CumPreliPh" class="accounting" value="0" />
+                  </div>
+                  <div>
+                    <label for="PCumFee">Preliminary Design Fee ($):</label>
+                    <input type="text" id="PCumFee" class="accounting" value="0" />
+                  </div>
+                  <div>
+                    <label for="PCumStaffing">Allowance for staffing ($):</label>
+                    <input type="text" id="PCumStaffing" class="accounting" value="0" />
+                  </div>
+                  <div>
+                    <label for="PCumReimburse"
+                      >Allowance for Reimbursable Services ($):</label
+                    >
+                    <input
+                      type="text"
+                      id="PCumReimburse"
+                      class="accounting"
+                      value="0"
+                    />
+                  </div>
+                  <div>
+                    <label for="CumFinalPh"
+                      >Cumulative value of Final Design Phase ($):</label
+                    >
+                    <input type="text" id="CumFinalPh" class="accounting" value="0" />
+                  </div>
+                  <div>
+                    <label for="FCumFee">Fee (for final value) ($):</label>
+                    <input type="text" id="FCumFee" class="accounting" value="0" />
+                  </div>
+                  <div>
+                    <label for="FCumStaffing"
+                      >Allowance for staffing (for final value) ($):</label
+                    >
+                    <input type="text" id="FCumStaffing" class="accounting" value="0" />
+                  </div>
+                  <div>
+                    <label for="FCumReimburse"
+                      >Allowance for Reimbursables (for final value) ($):</label
+                    >
+                    <input
+                      type="text"
+                      id="FCumReimburse"
+                      class="accounting"
+                      value="0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            </details>
+        </div>
+
+        </div><!-- End of row2-->
+      </div>
+          <footer>&copy; This app is designed and developed by Md E. Hoque</footer>
+      <script src="app/Scripts_STO.js"></script>
+</body>
+</html>
