@@ -1,0 +1,171 @@
+
+  
+/* Styling the Collapsible section: */
+
+span {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+  .pay_info > div {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #850424;
+    border-radius: 5px;
+    background-color: blueviolet;
+  }
+
+  select {
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 5px; 
+    width: 250px;
+    height: 30px; 
+  }
+  
+  select:hover,
+  input:hover {
+    background-color: #72b96a; 
+    color: #000; 
+  }
+  select:focus,
+  input:focus {
+    background-color: #22de7a; 
+    color: #fff; 
+  }
+  
+  .flex-container_b1 > div {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #03189c;
+    border-radius: 5px;
+  }
+
+  .flex-container_b1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+
+  .mini-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+
+  .mini-flex > label,
+  .mini-flex > input {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px; 
+  }
+  
+#note{
+  font-size: 0.5em;
+  text-align: right;
+  margin-top: -4px;
+  margin-right: 185px;
+}
+
+  .grid_b2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px; 
+  }
+  .grid_b2 > label {
+    display: inline-block;
+    width: auto;
+  }
+  
+  .long-label {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .grid_b2 > div {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #03189c;
+    border-radius: 5px;
+    background-color: blueviolet;
+  }
+  
+  div.grid_b2 {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #850424;
+    border-radius: 5px;
+    background-color: blueviolet;
+  }
+   
+  label {
+    display: inline-block;
+    padding-bottom: 0.5px;
+    font-size: 0.75em;
+  }
+  
+  input {
+  display: block;
+  width: 175px;
+  height: 25px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 125px;
+  outline: none;
+}
+  
+  input:hover {
+    background-color: #72b96a; 
+    color: #000; 
+  }
+  
+  input:focus {
+    background-color: #22de7a;
+    color: #fff;
+  }
+   
+.row2>h3{
+  color: orangered;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+  
+  .heading3 {
+    display: inline-block;
+    margin-right: 10px;
+    width: 45%;
+    height: 1em;
+    font-size: 1em;
+  }
+  
+  input.text-field {
+    display: inline-block;
+    font-size: 0.65em;
+    height: 1.5em;
+  }
+  
+  /* Styling the collapsible form: */
+  
+  details {
+    padding: 10px;
+    width: auto;
+  }
+  
+  summary {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  summary:hover {
+    background-color: #0056b3;
+  }
