@@ -21,10 +21,20 @@ span {
     font-size: 16px;
     border: 1px solid #ccc; 
     border-radius: 10px; 
-    padding: 5px; 
-    width: 250px;
-    height: 30px; 
+    padding: 1px; 
+    width: 175px;
+    height: 25px; 
   }
+
+    /* display: block;
+  width: 175px;
+  height: 25px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 125px;
+  outline: none; */
+
   
   select:hover,
   input:hover {
@@ -118,7 +128,10 @@ span {
   margin-right: 125px;
   outline: none;
 }
-  
+  select#time_extension_{
+  margin-right: 125px;
+
+  }
   input:hover {
     background-color: #72b96a; 
     color: #000; 

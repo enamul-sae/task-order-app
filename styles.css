@@ -3,13 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /* background-color: #282727; */
     background-color: rgb(26, 26, 67);
-    /* color: #8f0a89; */
-}
-h1{
-    color: #807575;
-    text-align: center;
-
+    /* color: #807575; */
 }
 
 header {

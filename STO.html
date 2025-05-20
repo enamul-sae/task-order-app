@@ -313,54 +313,6 @@
               value="0"
             />
   </div> 
-
-    <br><h3 class="heading3" id="TE">Time Extension related info:</h3>
-
-     <div class="align">
-            <label for="NTP_date"
-              >Notice to Proceed (NTP date)<span>*</span>:</label
-            >
-            <input
-              type="date"
-              id="NTP_date"
-              name="NTP_date"
-            />
-  </div> 
-
-    <div class="align">
-            <label for="current_end_date"
-              >Previous End date (including all extensions)<span>*</span>:</label
-            >
-            <input
-              type="date"
-              id="current_end_date"
-              name="current_end_date"
-            />
-  </div> 
-
- <!-- <div class="align">
-<label for="time_extension">Time extension requested?</label>
-<select id="time_extension" name="time_extension">
-  <option value="yes">Yes</option>
-  <option value="no">No</option>
-</select>
-</div> -->
-
-  <div class="align">
-            <label for="time_extension"
-              >Time extension requested for (CCDs)<span>*</span>:</label
-            >
-            <input
-              type="number"
-              id="time_extension"
-              name="time_extension"
-            />
-  </div> 
-
-
-
-
-            <!-- /***************** Time extension wip: ***************/ -->
   
             <button type="button" id="btn">Submit</button>
           </form>
@@ -372,9 +324,6 @@
 </div> <!-- End of row1-->
 
 <!-- /***************************** Collapsible Form ************************/ -->
-
-
-
 
         <div class="row2"><!-- Start of row2-->
             <h3>Task Order requested amount information</h3>
@@ -424,7 +373,6 @@
         
                   <div>
                     <label for="P_Payment_Method">Payment Method:<span>*</span></label>
-                    <!-- <input type="text" id="P_Payment_Method" value="Fee" /> -->
                     <select id="P_Payment_Method">
                       <option value="Fee" selected="true">Fee</option>
                       <option value="Staffing">Staffing (Time card)</option>
@@ -483,7 +431,6 @@
         
                   <div>
                     <label for="F_Payment_Method">Payment Method:<span>*</span></label>
-                    <!-- <input type="text" id="F_Payment_Method" value="Fee" /> -->
                     <select id="F_Payment_Method">
                         <option value="Fee" selected="true">Fee</option>
                         <option value="Staffing">Staffing (Time card)</option>
@@ -508,11 +455,6 @@
                       value="0"
                     />
                   </div>
-        
-                  <!-- <div>
-                    <label for="Final_art">Final Allowance for Artwork ($):</label>
-                    <input type="text" id="Final_art" class="accounting" value="0" />
-                  </div> -->
         
                   <div>
                     <label for="Final_Reimburse"
@@ -600,6 +542,10 @@
         </div><!-- End of row2-->
       </div>
           <footer>&copy; This app is designed and developed by Md E. Hoque</footer>
-      <script src="Scripts_STO.js"></script>
+      <script src="./util1.js"></script>
+      <script src="./Scripts_STO.js"></script>
+      <script src="./formatAccounting.js"></script>
+
+
 </body>
 </html>

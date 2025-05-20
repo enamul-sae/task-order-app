@@ -1,81 +1,6 @@
-function $(id) {
-  return document.getElementById(id);
-}
 
-function $v(id) {
-  return document.getElementById(id).value;
-}
 
-function q(cssSelector) {
-  return document.querySelector(cssSelector).value;
-}
 
-let curr = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  minimumFractionDigits: 2,
-});
-
-function f(num) {
-  return curr.format(num);
-}
-
-function sum(...nums) {
-  return nums.reduce((total, el) => total + el);
-}
-
-function toDecimal(num) {
-  return num.toFixed(2);
-}
-
-function ifp(num, text) {
-  if (num) {
-    return text + f(num) + "<br>";
-  } else {
-    return "";
-  }
-}
-
-function ifDel(num) {
-  if (num) {
-    return f(num) + "+";
-  } else {
-    return "";
-  }
-}
-
-function ifp2(num1, num2, text) {
-  if (num1 || num2) {
-    return (
-      text + f(num1) + "+" + f(num2) + ") = " + f(sum(num1, num2)) + "<br>"
-    );
-  } else {
-    return "";
-  }
-}
-
-function ifDel2(num1, num2) {
-  if (num1 || num2) {
-    return f(sum(num1, num2)) + "+";
-  } else {
-    return "";
-  }
-}
-
-function ifDel2End(num1, num2) {
-  if (num1 || num2) {
-    return f(sum(num1, num2));
-  } else {
-    return "";
-  }
-}
-
-function toNum(ID) {
-  const valueInNumber = parseFloat(
-    document.getElementById(ID).value.replace(/[^0-9.-]/g, "")
-  );
-  return valueInNumber;
-}
 
 /*******************Collapsible Form start ******* */
 const form1 = $("myForm");
@@ -149,8 +74,7 @@ $("btn").onclick = function () {
     ifp(n8, "Reimbursable for the Final design phase: ") +
     ifp(n10, "CSS for Final design phase: ") +
     "Final design phase not-to-exceed amount: (" +
-    f(n6) +
-    f(n7) +
+    f(n6+n7) +
     " + " +
     f(n8) +
     " + " +
@@ -179,48 +103,6 @@ $("btn").onclick = function () {
   Final_Reimburse.value = f(n8);
 };
 
-/*********** Format number into accounting style *************************/
-function formatAccounting(value) {
-  const number = parseFloat(value);
-  if (isNaN(number)) return "";
-  const formatted = Math.abs(number).toLocaleString("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-  });
-  return number < 0 ? `(${formatted})` : formatted;
-}
 
-// Parse formatted accounting text to number
-function parseAccounting(str) {
-  const cleaned = str.replace(/[\$,()]/g, "");
-  const number = parseFloat(cleaned);
-  return str.includes("(") ? -Math.abs(number) : number;
-}
-
-// Apply formatting to all accounting inputs
-function formatAllInputs() {
-  document.querySelectorAll(".accounting").forEach((input) => {
-    const raw = parseAccounting(input.value);
-    input.value = formatAccounting(raw);
-  });
-}
-
-// On blur, format individual input
-document.querySelectorAll(".accounting").forEach((input) => {
-  input.addEventListener("blur", () => {
-    const raw = parseAccounting(input.value);
-    input.value = formatAccounting(raw);
-  });
-
-  input.addEventListener("focus", () => {
-    // Show plain number while editing
-    const raw = parseAccounting(input.value);
-    input.value = raw || "";
-  });
-});
-
-// Initial formatting
-formatAllInputs();
 
 /************************************************************/
